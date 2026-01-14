@@ -11,10 +11,9 @@ let desc =
 const LandingPage = () => {
   const navigate = useNavigate();
   const { token } = useStoreContext();
-  console.log("TOKEN FROM LANDING PAGE: " + token);
 
   const dashBoardNavigateHandler = () => {
-
+     navigate("/dashboard")
   };
   return (
     <div className="min-h-[calc(100vh-64px)]  lg:px-14 sm:px-8 px-4">
